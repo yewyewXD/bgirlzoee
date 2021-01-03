@@ -19,5 +19,11 @@ body {
   color: $themeColor;
 }
 
+.actionButton {
+  @media (max-width: $md) {
+    width: 100%;
+  }
+}
+
 @import "../components/reusable";
 @import "./pages/HomeStyles/homeStyles";

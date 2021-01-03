@@ -33,6 +33,10 @@
     //   inset -25px 0px 15px -25px black;
     top: 0;
     left: 0;
+
+    @media (max-width: $md) {
+      background: rgba($color: black, $alpha: 0.7);
+    }
   }
 }
 

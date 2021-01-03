@@ -7,6 +7,9 @@ const HeroSection = () => {
         <div className="container">
           <div className="Caption__Title | heading mb-3">Zoee Hablot</div>
           <div>Breakdancer, photographer, artist, designer</div>
+          <button className="actionButton | mt-4 btn btn-outline-primary btn-lg">
+            Join the community
+          </button>
         </div>
       </div>
 

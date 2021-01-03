@@ -7,3 +7,28 @@
 .all-center-column {
   flex-direction: column;
 }
+
+.btn {
+  outline: none !important;
+  box-shadow: none !important;
+  transition: 0.2s;
+}
+.btn-outline-primary {
+  background: transparent !important;
+  color: $themeColor !important;
+  border: solid 2px $themeColor !important;
+  font-weight: 600;
+  &:hover {
+    background: $themeColor !important;
+    color: black !important;
+  }
+}
+
+.btn-lg {
+  padding: 10px 30px !important;
+  font-size: 21px !important;
+}
+.btn-md {
+  padding: 8px 16px !important;
+  font-size: 18px !important;
+}
