@@ -1,5 +1,5 @@
 .Caption {
-  z-index: 2;
+  z-index: 99;
   @media (max-width: $md) {
     text-align: center;
   }
@@ -29,6 +29,7 @@
   &__Shadow {
     // box-shadow: inset 25px 0px 15px -25px black,
     //   inset -25px 0px 15px -25px black;
+    z-index: 2;
     background: rgba($color: black, $alpha: 0.6);
     top: 0;
     left: 0;
@@ -37,12 +38,24 @@
 
 .Video {
   height: 100%;
+  z-index: 2;
   @media (max-width: $md) {
     height: auto;
     width: 130%;
   }
+}
 
-  // @media (max-width: $sm) {
-  //   margin-left: 170px;
-  // }
+.BlurredVideo {
+  position: absolute;
+  z-index: 1;
+  height: 100%;
+}
+
+.BlurredBackdrop {
+  position: absolute;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0);
+  backdrop-filter: blur(10px);
 }
