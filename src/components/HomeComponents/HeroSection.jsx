@@ -7,9 +7,14 @@ const HeroSection = () => {
         <div className="container">
           <div className="Caption__Title | heading mb-3">Zoee Hablot</div>
           <div>Breakdancer, photographer, artist, designer</div>
-          <button className="actionButton | mt-4 btn btn-outline-primary btn-lg">
+          <a
+            className="actionButton | mt-4 btn btn-outline-primary btn-lg"
+            href="https://www.instagram.com/bgirlzoee/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Join the community
-          </button>
+          </a>
         </div>
       </div>
 

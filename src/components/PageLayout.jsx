@@ -6,7 +6,12 @@ const PageLayout = ({ children }) => {
       <header className="Header | position-absolute">
         <nav className="navbar navbar-expand-sm bg-transparent">
           <div className="container">
-            <a className="HeaderBrand | navbar-brand text-white" href="/">
+            <a
+              className="HeaderBrand | navbar-brand text-white"
+              href="https://www.instagram.com/bgirlzoee/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               bgirlzoee<span className="highlight">.</span>
             </a>
             {/* <button
