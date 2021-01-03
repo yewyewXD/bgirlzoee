@@ -3,6 +3,7 @@ import React from "react";
 const HeroSection = () => {
   return (
     <section className="HeroSection">
+      {/* caption */}
       <div className="Caption | h-100 w-100 all-center text-white position-absolute">
         <div className="container">
           <div className="Caption__Title | heading mb-3">Zoee Hablot</div>
@@ -18,10 +19,11 @@ const HeroSection = () => {
         </div>
       </div>
 
-      <div className="VideoContainer | all-center">
-        <div className="VideoContainer__Shadow"></div>
+      {/* video */}
+      <div className="VideoContainer | all-center h-100 position-absolute overflow-hidden">
+        <div className="VideoContainer__Shadow | position-absolute h-100 w-100"></div>
         <video
-          className="Video"
+          className="h-100"
           loop
           playsInline
           autoPlay
