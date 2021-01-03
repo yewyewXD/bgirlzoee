@@ -2,5 +2,8 @@
   .HeroSection {
     height: 100vh;
     background: black;
+    position: relative;
+
+    @import "./heroSection";
   }
 }
