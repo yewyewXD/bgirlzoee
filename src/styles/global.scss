@@ -1,3 +1,6 @@
+@import "./01-variables";
+@import "./02-rewrites";
+
 body {
   scroll-behavior: smooth;
   overflow-x: hidden;
@@ -5,12 +8,16 @@ body {
   padding: 0;
   font-family: "Nunito", sans-serif;
   font-weight: 400;
+  font-size: 20px;
 }
 
 .heading {
   font-family: "Montserrat", sans-serif;
 }
 
-@import "./01-variables";
-@import "./02-rewrites";
+.highlight {
+  color: $themeColor;
+}
+
+@import "../components/reusable";
 @import "./pages/HomeStyles/homeStyles";
