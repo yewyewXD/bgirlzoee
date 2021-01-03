@@ -1,18 +1,15 @@
 .Caption {
   z-index: 2;
   width: 100%;
+  @media (max-width: $md) {
+    text-align: center;
+  }
   &__Title {
     font-size: 80px;
     font-weight: 700;
     line-height: 70px;
     @media (max-width: $md) {
       font-size: 60px;
-      text-align: center;
-    }
-  }
-  &__Subtitle {
-    font-size: 20px;
-    @media (max-width: $md) {
       text-align: center;
     }
   }
