@@ -19,6 +19,10 @@
   right: 0;
   top: 0;
 
+  @media (max-width: $md) {
+    width: 100%;
+  }
+
   &__Shadow {
     // box-shadow: inset 25px 0px 15px -25px black,
     //   inset -25px 0px 15px -25px black;
@@ -32,10 +36,10 @@
   height: 100%;
   @media (max-width: $md) {
     height: auto;
-    width: 100%;
+    width: 130%;
   }
 
-  @media (max-width: $sm) {
-    margin-left: 170px;
-  }
+  // @media (max-width: $sm) {
+  //   margin-left: 170px;
+  // }
 }
