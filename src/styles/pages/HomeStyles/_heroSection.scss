@@ -10,6 +10,9 @@
     @media (max-width: $md) {
       font-size: 60px;
     }
+    @media (max-width: $sm) {
+      font-size: 50px;
+    }
   }
 }
 

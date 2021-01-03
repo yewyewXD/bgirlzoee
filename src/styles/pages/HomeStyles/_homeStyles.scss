@@ -4,6 +4,10 @@
     background: black;
     position: relative;
 
+    @media (max-width: $sm) {
+      height: 80vh;
+    }
+
     @import "./heroSection";
   }
 }

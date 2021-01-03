@@ -9,6 +9,10 @@ body {
   font-family: "Nunito", sans-serif;
   font-weight: 400;
   font-size: 20px;
+
+  @media (max-width: $sm) {
+    font-size: 18px;
+  }
 }
 
 .heading {
