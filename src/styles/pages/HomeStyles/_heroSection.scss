@@ -25,9 +25,13 @@
     background: rgba($color: black, $alpha: 0.6);
     top: 0;
     left: 0;
+  }
+}
 
-    @media (max-width: $md) {
-      background: rgba($color: black, $alpha: 0.7);
-    }
+.Video {
+  height: 100%;
+  @media (max-width: $md) {
+    height: auto;
+    width: 100%;
   }
 }

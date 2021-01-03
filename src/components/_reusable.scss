@@ -5,4 +5,8 @@
 .HeaderBrand {
   font-size: 40px;
   font-weight: 600;
+
+  @media (max-width: $md) {
+    font-size: 35px;
+  }
 }

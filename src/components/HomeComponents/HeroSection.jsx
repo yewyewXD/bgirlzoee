@@ -23,7 +23,7 @@ const HeroSection = () => {
       <div className="VideoContainer | all-center h-100 position-absolute overflow-hidden">
         <div className="VideoContainer__Shadow | position-absolute h-100 w-100"></div>
         <video
-          className="h-100"
+          className="Video"
           loop
           playsInline
           autoPlay
