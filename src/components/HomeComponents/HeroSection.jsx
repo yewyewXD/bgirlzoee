@@ -5,7 +5,7 @@ const HeroSection = () => {
     <section className="HeroSection">
       <div className="Caption | h-100 w-100 all-center text-white position-absolute ">
         <div className="container all-center-column align-items-start">
-          <div className="Caption__Title">Zoee Hablot</div>
+          <div className="Caption__Title | heading">Zoee Hablot</div>
           <div className="Caption__Subtitle">My name is bgirlzoee</div>
         </div>
       </div>
