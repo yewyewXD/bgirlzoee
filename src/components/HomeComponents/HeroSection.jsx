@@ -23,7 +23,7 @@ const HeroSection = () => {
       <div className="VideoContainer | all-center h-100 position-absolute overflow-hidden">
         {/* blurred video */}
         <video
-          className="BlurredVideo"
+          className="BlurredVideo | h-100 position-absolute"
           loop
           playsInline
           autoPlay
@@ -33,7 +33,7 @@ const HeroSection = () => {
           src="https://scontent-iad3-1.cdninstagram.com/v/t50.2886-16/87761858_235555977470480_8244806077495858175_n.mp4?efg=eyJ2ZW5jb2RlX3RhZyI6InZ0c192b2RfdXJsZ2VuLjk2MC5mZWVkLmRlZmF1bHQiLCJxZV9ncm91cHMiOiJbXCJpZ193ZWJfZGVsaXZlcnlfdnRzX290ZlwiXSJ9&_nc_ht=scontent-iad3-1.cdninstagram.com&_nc_cat=108&_nc_ohc=oAvMwavAK2QAX_s81of&vs=17917935946377672_1444852449&_nc_vs=HBksFQAYJEdNSWpPd1VRb2x5bVBOWUFBUDlUSDlOeGIydHlia1lMQUFBRhUAAsgBABUAGCRHSVhYVFFXUVBtMUJQdXdCQUszckJEdGozRVlrYmtZTEFBQUYVAgLIAQAoABgAGwAVAAAmkNX1xY6R1D8VAigCQzMsF0A7CHKwIMScGBJkYXNoX2Jhc2VsaW5lXzFfdjERAHXqBwA%3D&_nc_rid=be7d749e4f&oe=5FF3CCF1&oh=93c67ffb6c502756562172a027968904&dl=1"
           type="video/mp4"
         ></video>
-        <div className="BlurredBackdrop"></div>
+        <div className="BlurredBackdrop | h-100 w-100 position-absolute"></div>
 
         {/* real video */}
         <video
