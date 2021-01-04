@@ -40,13 +40,19 @@ const PostsSection = () => {
   }
 
   useEffect(() => {
-    handleGetPosts();
+    // handleGetPosts();
   }, []);
 
   return (
-    <div className="PostsSection | py-5 my-5">
+    <div className="PostsSection | pt-5 my-sm-5">
       <div className="container">
-        <h2 className="text-center mb-5">My Latest Posts</h2>
+        {/* title */}
+        <div className="mb-lg-4 mb-3 pb-4 text-center">
+          <h2>My Latest Posts</h2>
+          <hr className="titleLine" />
+        </div>
+
+        {/* content */}
         <div className="row">
           {allPosts.length > 0 &&
             allPosts.map((post) => (
@@ -55,7 +61,7 @@ const PostsSection = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 key={post.id}
-                className="CardContainer | col-lg-4 mb-lg-0 mb-5 text-decoration-none"
+                className="CardContainer | col-lg-4 mb-5 text-decoration-none"
               >
                 <div className="card text-white bg-transparent">
                   <div

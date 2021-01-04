@@ -29,6 +29,11 @@ body {
   color: rgba(255, 255, 255, 0.5);
 }
 
+.titleLine {
+  border-top: solid 2px $themeColor;
+  width: 70px;
+}
+
 .actionButton {
   @media (max-width: $md) {
     width: 100%;
