@@ -2,15 +2,9 @@
   z-index: 99999;
 }
 
-.Footer {
-  font-size: 16px;
-  padding: 3rem 0;
-}
-
-.HeaderBrand,
-.FooterBrand {
-  font-size: 40px;
+.HeaderBrand {
   font-weight: 600;
+  font-size: 40px;
 
   @media (max-width: $md) {
     font-size: 33px;
@@ -19,4 +13,14 @@
   @media (max-width: $sm) {
     font-size: 25px;
   }
+}
+
+.Footer {
+  background: #191919;
+  font-size: 16px;
+}
+
+.FooterBrand {
+  font-size: 30px;
+  font-weight: 600;
 }

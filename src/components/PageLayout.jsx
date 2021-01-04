@@ -1,6 +1,20 @@
 import React from "react";
 
 const PageLayout = ({ children }) => {
+  const socialMedias = [
+    {
+      link: "https://www.instagram.com/bgirlzoee/",
+      text: "INSTAGRAM",
+    },
+    {
+      link: "https://twitter.com/bgirlzoee",
+      text: "TWITTER",
+    },
+    {
+      link: "https://www.facebook.com/zoee.hablot.7/",
+      text: "FACEBOOK",
+    },
+  ];
   return (
     <>
       <header className="Header | w-100 position-absolute">
@@ -48,7 +62,7 @@ const PageLayout = ({ children }) => {
 
       {children}
 
-      <footer className="Footer | bg-dark">
+      <footer className="Footer | py-5">
         <div className="container text-center">
           {/* footer title */}
           <div className="mb-4">
@@ -65,12 +79,22 @@ const PageLayout = ({ children }) => {
           <div className="row all-center">
             <div className="col-md-7">
               <div className="d-flex flex-wrap all-center">
-                <span className="mx-3">INSTAGRAM</span>
-                <span className="mx-3">FACEBOOK</span>
-                <span className="mx-3">TWITTER</span>
+                {socialMedias.map((socialMedia) => (
+                  <a
+                    className="mx-3 mb-1 muted"
+                    key={socialMedia.link}
+                    href={socialMedia.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {socialMedia.text}
+                  </a>
+                ))}
               </div>
 
-              <div className="mt-5">bgirlzoee © 2021 All rights reserved</div>
+              <div className="mt-5 muted">
+                bgirlzoee © 2021 All rights reserved
+              </div>
             </div>
           </div>
         </div>
