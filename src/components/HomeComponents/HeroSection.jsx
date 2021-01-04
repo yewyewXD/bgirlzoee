@@ -4,7 +4,7 @@ const HeroSection = () => {
   return (
     <section className="HeroSection">
       {/* caption */}
-      <div className="Caption | h-100 w-100 all-center text-white position-absolute">
+      <div className="Caption | h-100 w-100 all-center position-absolute">
         <div className="container">
           <div className="Caption__Title | heading mb-3">Zoée Hablot</div>
           <div>Breakdancer, photographer, artist, designer</div>
