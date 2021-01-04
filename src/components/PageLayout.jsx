@@ -48,7 +48,33 @@ const PageLayout = ({ children }) => {
 
       {children}
 
-      <footer>footer</footer>
+      <footer className="Footer | bg-dark">
+        <div className="container text-center">
+          {/* footer title */}
+          <div className="mb-4">
+            <a
+              href="https://www.instagram.com/bgirlzoee/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="FooterBrand | text-white"
+            >
+              bgirlzoee<span className="highlight">.</span>
+            </a>
+          </div>
+
+          <div className="row all-center">
+            <div className="col-md-7">
+              <div className="d-flex flex-wrap all-center">
+                <span className="mx-3">INSTAGRAM</span>
+                <span className="mx-3">FACEBOOK</span>
+                <span className="mx-3">TWITTER</span>
+              </div>
+
+              <div className="mt-5">bgirlzoee © 2021 All rights reserved</div>
+            </div>
+          </div>
+        </div>
+      </footer>
     </>
   );
 };
