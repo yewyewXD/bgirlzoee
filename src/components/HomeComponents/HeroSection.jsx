@@ -6,8 +6,12 @@ const HeroSection = () => {
       {/* caption */}
       <div className="Caption | h-100 w-100 all-center position-absolute">
         <div className="container">
-          <div className="Caption__Title | heading mb-3">Zoée Hablot</div>
-          <div>Breakdancer, photographer, artist, designer</div>
+          <div className="Caption__Title | heading mb-md-3 mb-2">
+            Zoée Hablot
+          </div>
+          <div className="Caption__Subtitle">
+            Breakdancer, photographer, artist, designer
+          </div>
           <a
             className="actionButton | mt-4 btn btn-outline-primary btn-lg"
             href="https://www.instagram.com/bgirlzoee/"
