@@ -25,6 +25,10 @@ body {
   color: $themeColor;
 }
 
+.muted {
+  color: rgba(255, 255, 255, 0.5);
+}
+
 .actionButton {
   @media (max-width: $md) {
     width: 100%;
@@ -32,4 +36,4 @@ body {
 }
 
 @import "../components/reusable";
-@import "./pages/HomeStyles/homeStyles";
+@import "./pages/homeStyles";

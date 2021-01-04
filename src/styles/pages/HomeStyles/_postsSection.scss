@@ -1,0 +1,26 @@
+.CardContainer {
+  @media (max-width: $lg) {
+    width: 400px;
+    margin: 0 auto;
+  }
+
+  @media (max-width: $sm) {
+    width: 310px;
+  }
+}
+
+.CardImage {
+  height: 250px;
+  background-position: center;
+  background-size: 120% 120%;
+  background-repeat: no-repeat;
+  transition: 0.3s;
+
+  &:hover {
+    background-size: 140% 140%;
+  }
+
+  @media (max-width: $sm) {
+    height: 195px;
+  }
+}

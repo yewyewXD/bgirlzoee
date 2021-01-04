@@ -7,6 +7,10 @@
       height: 80vh;
     }
 
-    @import "./heroSection";
+    @import "../pages/HomeStyles/heroSection";
+  }
+
+  .PostsSection {
+    @import "../pages/HomeStyles/postsSection";
   }
 }
