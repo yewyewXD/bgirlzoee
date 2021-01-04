@@ -40,7 +40,7 @@ const PostsSection = () => {
   }
 
   useEffect(() => {
-    // handleGetPosts();
+    handleGetPosts();
   }, []);
 
   return (

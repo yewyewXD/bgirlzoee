@@ -36,7 +36,7 @@ const GallerySection = () => {
     },
   ];
   return (
-    <div className="GallerySection | pt-5 my-sm-5">
+    <div className="GallerySection | py-5 my-sm-5">
       <div className="container">
         {/* title */}
         <div className="mb-lg-4 mb-3 pb-4 text-center">
@@ -45,22 +45,22 @@ const GallerySection = () => {
         </div>
 
         {/* content */}
-        <div className="row">
+        <div className="row mx-sm-0 mx-2">
           <a
             href="https://www.instagram.com/p/CFCCV3jjS2l/?utm_source=ig_web_copy_link"
             target="_blank"
             rel="noopener noreferrer"
-            className="GalleryCard | all-center col-sm-6 col-lg-8 mb-3 px-2"
+            className="GalleryCard | all-center col-md-6 col-lg-8 mb-md-3 mb-4 p-0"
           >
             <div
-              className="GalleryCard__Image"
+              className="GalleryCard__Image | mx-md-2"
               style={{
                 backgroundImage: `url(${"https://instagram.fkul14-1.fna.fbcdn.net/v/t51.2885-15/e35/s1080x1080/119066386_3880472801968165_2154101224876495149_n.jpg?_nc_ht=instagram.fkul14-1.fna.fbcdn.net&_nc_cat=101&_nc_ohc=-R95ceq88f4AX_B4rKp&tp=1&oh=8f9e38aadb27b95cf2230e5b7fa3e39a&oe=601DED0A"})`,
               }}
             ></div>
 
-            <div className="GalleryCard__Shadow | px-4 py-3">
-              <div className="GalleryCaption">
+            <div className="GalleryCard__Shadow">
+              <div className="GalleryCaption | mx-sm-4 mx-3 my-md-3 my-sm-4 my-3">
                 <div className="GalleryCaption__Title">
                   ✨M O U N T A I N S✨
                 </div>
@@ -73,20 +73,21 @@ const GallerySection = () => {
 
           {galleries.map((gallery) => (
             <a
+              key={gallery.image}
               href={gallery.post}
               target="_blank"
               rel="nooopener noreferrer"
-              className="GalleryCard | all-center col-sm-6 col-lg-4 mb-3 px-2"
+              className="GalleryCard | all-center col-md-6 col-lg-4 mb-md-3 mb-4 p-0"
             >
               <div
-                className="GalleryCard__Image"
+                className="GalleryCard__Image | mx-md-2"
                 style={{
                   backgroundImage: `url(${gallery.image})`,
                 }}
               ></div>
 
-              <div className="GalleryCard__Shadow | px-4 py-3">
-                <div className="GalleryCaption">
+              <div className="GalleryCard__Shadow">
+                <div className="GalleryCaption | mx-sm-4 mx-3 my-md-3 my-sm-4 my-3">
                   <div className="GalleryCaption__Title">{gallery.title}</div>
                   <div className="GalleryCaption__Subtitle | muted">
                     Posted on {gallery.date}
