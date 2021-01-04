@@ -50,7 +50,7 @@ const GallerySection = () => {
             href="https://www.instagram.com/p/CFCCV3jjS2l/?utm_source=ig_web_copy_link"
             target="_blank"
             rel="noopener noreferrer"
-            className="GalleryCard | all-center col-md-6 col-lg-8 mb-md-3 mb-4 p-0"
+            className="GalleryCard | all-center align-items-end col-md-6 col-lg-8 mb-md-3 mb-4 p-0"
           >
             <div
               className="GalleryCard__Image | mx-md-2"
@@ -77,7 +77,7 @@ const GallerySection = () => {
               href={gallery.post}
               target="_blank"
               rel="nooopener noreferrer"
-              className="GalleryCard | all-center col-md-6 col-lg-4 mb-md-3 mb-4 p-0"
+              className="GalleryCard | all-center align-items-end col-md-6 col-lg-4 mb-md-3 mb-4 p-0"
             >
               <div
                 className="GalleryCard__Image | mx-md-2"

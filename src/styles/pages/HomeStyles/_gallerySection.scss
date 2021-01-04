@@ -11,8 +11,14 @@
     color: white;
     transition: 0.3s;
 
-    &:hover {
-      opacity: 0;
+    @media (min-width: $md) {
+      &:hover {
+        opacity: 0;
+      }
+    }
+
+    @media (max-width: $md) {
+      height: min-content;
     }
   }
 
