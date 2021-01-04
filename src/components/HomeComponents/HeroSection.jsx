@@ -23,7 +23,7 @@ const HeroSection = () => {
       <div className="VideoContainer | all-center h-100 position-absolute overflow-hidden">
         {/* blurred video */}
         <video
-          className="BlurredVideo | d-md-none d-block h-100 position-absolute"
+          className="BlurredVideo | d-none h-100 position-absolute"
           loop
           playsInline
           autoPlay
@@ -33,7 +33,7 @@ const HeroSection = () => {
           src="media/compressed-trim.mp4"
           type="video/mp4"
         ></video>
-        <div className="BlurredBackdrop | h-100 w-100 position-absolute"></div>
+        <div className="BlurredBackdrop | d-none h-100 w-100 position-absolute"></div>
 
         {/* real video */}
         <video
