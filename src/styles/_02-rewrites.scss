@@ -1,3 +1,4 @@
+// flex
 .all-center,
 .all-center-column {
   display: flex !important;
@@ -8,6 +9,7 @@
   flex-direction: column;
 }
 
+//buttons
 .btn {
   outline: none !important;
   box-shadow: none !important;
@@ -31,4 +33,9 @@
 .btn-md {
   padding: 8px 16px !important;
   font-size: 18px !important;
+}
+
+// link
+a {
+  text-decoration: none !important;
 }

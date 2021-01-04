@@ -44,7 +44,7 @@ const PostsSection = () => {
   }, []);
 
   return (
-    <div className="PostsSection | pt-5 my-sm-5">
+    <section className="PostsSection | pt-5 my-sm-5">
       <div className="container">
         {/* title */}
         <div className="mb-lg-4 mb-3 pb-4 text-center">
@@ -61,7 +61,7 @@ const PostsSection = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 key={post.id}
-                className="CardContainer | col-lg-4 mb-5 text-decoration-none"
+                className="CardContainer | col-lg-4 mb-5"
               >
                 <div className="card text-white bg-transparent">
                   <div
@@ -86,7 +86,7 @@ const PostsSection = () => {
             ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
