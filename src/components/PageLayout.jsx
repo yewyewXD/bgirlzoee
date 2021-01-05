@@ -136,7 +136,8 @@ const PageLayout = ({ children }) => {
               </div>
 
               <div className="mt-5 muted">
-                bgirlzoee © 2021 All rights reserved
+                <span className="heading">bgirlzoee</span> © 2021 All rights
+                reserved
               </div>
             </div>
           </div>
