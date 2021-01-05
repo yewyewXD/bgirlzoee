@@ -1,0 +1,36 @@
+circle {
+  fill: none;
+  stroke: black;
+  stroke-width: 10;
+  stroke-linecap: round;
+  transform: translate(5px, 5px);
+
+  &:nth-child(2) {
+    stroke: $themeColor;
+    transition: 0.5s;
+    stroke-dasharray: 440;
+    stroke-dashoffset: 440;
+  }
+}
+
+.CardContainer {
+  width: 250px;
+  height: 300px;
+}
+
+svg,
+.PercentContainer {
+  width: 150px;
+  height: 150px;
+  z-index: 1000;
+}
+
+.PercentContainer {
+  border-radius: 50%;
+}
+
+.Percent {
+  border-radius: 50%;
+  top: 0;
+  left: 0;
+}
