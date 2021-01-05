@@ -7,7 +7,7 @@ circle {
 
   &:nth-child(2) {
     stroke: $themeColor;
-    transition: 0.5s;
+    transition: 1.5s;
     stroke-dasharray: 440;
     stroke-dashoffset: 440;
   }
