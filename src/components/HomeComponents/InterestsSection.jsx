@@ -1,44 +1,49 @@
 import React, { useState } from "react";
-import { Fade } from "react-reveal";
+import CountUp from "react-countup";
+import ReactVisibilitySensor from "react-visibility-sensor";
 
 const InterestsSection = () => {
-  const [breakingPercent, setBreakingPercent] = useState(0);
-  const [kpopPercent, setKpopPercent] = useState(0);
-  const [photoPercent, setPhotoPercent] = useState(0);
-  const [singPercent, setSingPercent] = useState(0);
+  const [showInterest1, setShowInterest1] = useState(false);
+  const [showInterest2, setShowInterest2] = useState(false);
+  const [showInterest3, setShowInterest3] = useState(false);
+  const [showInterest4, setShowInterest4] = useState(false);
 
   const interests = [
     {
       type: 1,
-      percentage: breakingPercent,
+      percentage: 100,
       text: "Breakdance",
+      show: showInterest1,
     },
     {
       type: 2,
-      percentage: kpopPercent,
+      percentage: 100,
       text: "K-pop",
+      show: showInterest2,
     },
     {
       type: 3,
-      percentage: photoPercent,
+      percentage: 70,
       text: "Photography",
+      show: showInterest3,
     },
     {
       type: 4,
-      percentage: singPercent,
+      percentage: 60,
       text: "Singing & Rapping",
+      show: showInterest4,
     },
   ];
 
-  function handleAnimateInterests(interestType) {
+  function handleAnimateInterests(isVisible, interestType) {
     if (interestType === 1) {
-      setBreakingPercent((prevPercent) => prevPercent + 100);
+      setShowInterest1(isVisible);
     } else if (interestType === 2) {
-      setKpopPercent((prevPercent) => prevPercent + 100);
+      setShowInterest2(isVisible);
     } else if (interestType === 3) {
-      setPhotoPercent((prevPercent) => prevPercent + 70);
+      setShowInterest3(isVisible);
     } else if (interestType === 4) {
-      setSingPercent((prevPercent) => prevPercent + 60);
+      setShowInterest4(isVisible);
     }
   }
 
@@ -52,25 +57,26 @@ const InterestsSection = () => {
         </div>
 
         {/* content */}
-        <div className="row all-center">
+        <div className="row all-center" data-aos="fade-up">
           {interests.map((interest) => (
             <div
               className="InterestCard | col-lg-3 all-center text-center position-relative overflow-hidden"
               key={interest.type}
             >
-              <Fade
-                onReveal={() => {
-                  handleAnimateInterests(interest.type);
-                }}
-              >
-                <div className="all-center-column">
+              <div className="all-center-column">
+                <ReactVisibilitySensor
+                  partialVisibility={true}
+                  onChange={(isVisible) => {
+                    handleAnimateInterests(isVisible, interest.type);
+                  }}
+                >
                   <div className="PercentContainer | position-relative">
                     <svg className="position-relative">
                       <circle cx="70" cy="70" r="70" />
                       <circle
                         className="w-100 h-100"
                         style={{
-                          strokeDashoffset: interest.percentage
+                          strokeDashoffset: interest.show
                             ? 440 - (440 * interest.percentage) / 100
                             : 440,
                         }}
@@ -81,14 +87,18 @@ const InterestsSection = () => {
                     </svg>
                     <div className="Percent | position-absolute all-center w-100 h-100">
                       <div className="Percent__Text | m-0">
-                        {interest.percentage ? interest.percentage : 0}%
+                        {interest.show && (
+                          <>
+                            <CountUp end={interest.percentage} duration={2} />%
+                          </>
+                        )}
                       </div>
                     </div>
                   </div>
+                </ReactVisibilitySensor>
 
-                  <div className="InterestText | mt-3">{interest.text}</div>
-                </div>
-              </Fade>
+                <div className="InterestText | mt-3">{interest.text}</div>
+              </div>
             </div>
           ))}
         </div>
