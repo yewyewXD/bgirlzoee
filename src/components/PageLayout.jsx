@@ -18,6 +18,25 @@ const PageLayout = ({ children }) => {
       text: "FACEBOOK",
     },
   ];
+
+  const navItems = [
+    {
+      link: "#hero",
+      text: "Home",
+    },
+    {
+      link: "#posts",
+      text: "Posts",
+    },
+    {
+      link: "#gallery",
+      text: "Gallery",
+    },
+    {
+      link: "#interests",
+      text: "Interests",
+    },
+  ];
   return (
     <>
       <header className="Header | w-100">
@@ -59,26 +78,13 @@ const PageLayout = ({ children }) => {
                 items={["home", "posts", "gallery", "interests"]}
                 currentClassName="active"
               >
-                <li className="nav-item">
-                  <a className="nav-link mx-2" href="#home">
-                    Home
-                  </a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link mx-2" href="#posts">
-                    Posts
-                  </a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link mx-2" href="#gallery">
-                    Gallery
-                  </a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link mx-2" href="#interests">
-                    Interests
-                  </a>
-                </li>
+                {navItems.map((navItem) => (
+                  <li className="nav-item" key={navItem.link}>
+                    <a className="nav-link mx-2" href={navItem.link}>
+                      {navItem.text}
+                    </a>
+                  </li>
+                ))}
               </Scrollspy>
             </div>
           </div>
