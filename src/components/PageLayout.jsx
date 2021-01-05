@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Scrollspy from "react-scrollspy";
 
 const PageLayout = ({ children }) => {
   const [navIsOpen, setNavIsOpen] = useState(false);
@@ -20,7 +21,7 @@ const PageLayout = ({ children }) => {
   return (
     <>
       <header className="Header | w-100">
-        <nav className="navbar navbar-expand-md bg-transparent navbar-dark">
+        <nav className="navbar navbar-expand-md bg-transparent navbar-dark py-1">
           <div className="container">
             {/* Logo */}
             <a
@@ -53,8 +54,12 @@ const PageLayout = ({ children }) => {
               className={`collapse navbar-collapse ${navIsOpen && "show"}`}
               id="collapsibleNavId"
             >
-              <ul className="navbar-nav mt-2 mt-lg-0 ml-auto">
-                <li className="nav-item text-white active">
+              <Scrollspy
+                className="navbar-nav mt-2 mt-lg-0 ml-auto"
+                items={["home", "posts", "gallery", "interests"]}
+                currentClassName="active"
+              >
+                <li className="nav-item">
                   <a className="nav-link mx-2" href="#home">
                     Home
                   </a>
@@ -74,7 +79,7 @@ const PageLayout = ({ children }) => {
                     Interests
                   </a>
                 </li>
-              </ul>
+              </Scrollspy>
             </div>
           </div>
         </nav>
