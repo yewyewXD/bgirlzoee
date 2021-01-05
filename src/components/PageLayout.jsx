@@ -7,7 +7,7 @@ const PageLayout = ({ children }) => {
 
   useEffect(() => {
     const listener = document.addEventListener("scroll", () => {
-      const navBgClass = window.scrollY < 700 ? "" : "darkBg";
+      const navBgClass = window.scrollY < 400 ? "" : "darkBg";
       setNavBg(navBgClass);
     });
     return () => {
