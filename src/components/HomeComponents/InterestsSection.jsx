@@ -44,7 +44,7 @@ const InterestsSection = () => {
 
   return (
     <section className="InterestsSection | pt-5" id="interests">
-      <div className="container my-sm-5 mb-sm-0 mb-5">
+      <div className="container my-sm-5 mb-5">
         {/* title */}
         <div className="text-center">
           <h2 className="m-0">My Interests</h2>
