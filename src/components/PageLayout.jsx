@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 
 const PageLayout = ({ children }) => {
+  const [navIsOpen, setNavIsOpen] = useState(false);
+
   const socialMedias = [
     {
       link: "https://www.instagram.com/bgirlzoee/",
@@ -18,7 +20,7 @@ const PageLayout = ({ children }) => {
   return (
     <>
       <header className="Header | w-100">
-        <nav className="navbar navbar-expand-sm bg-transparent navbar-dark">
+        <nav className="navbar navbar-expand-md bg-transparent navbar-dark">
           <div className="container">
             {/* Logo */}
             <a
@@ -30,19 +32,27 @@ const PageLayout = ({ children }) => {
               bgirlzoee<span className="highlight">.</span>
             </a>
             <button
-              className="navbar-toggler d-lg-none"
+              className={`navbar-toggler d-md-none btn btn-outline-secondary bg-transparent ${
+                navIsOpen && "themeOutline"
+              }`}
               type="button"
               data-toggle="collapse"
               data-target="#collapsibleNavId"
               aria-controls="collapsibleNavId"
               aria-expanded="false"
               aria-label="Toggle navigation"
+              onClick={() => {
+                setNavIsOpen((prevIsOpen) => !prevIsOpen);
+              }}
             >
               <span className="navbar-toggler-icon"></span>
             </button>
 
             {/* Menu */}
-            <div className="collapse navbar-collapse " id="collapsibleNavId">
+            <div
+              className={`collapse navbar-collapse ${navIsOpen && "show"}`}
+              id="collapsibleNavId"
+            >
               <ul className="navbar-nav mt-2 mt-lg-0 ml-auto">
                 <li className="nav-item text-white active">
                   <a className="nav-link mx-2" href="#home">

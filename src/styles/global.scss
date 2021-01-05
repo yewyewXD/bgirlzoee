@@ -25,6 +25,10 @@ body {
   color: $themeColor;
 }
 
+.themeOutline {
+  border: solid 1px $themeColor !important;
+}
+
 a.muted {
   &:hover {
     color: white;
