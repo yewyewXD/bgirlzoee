@@ -36,7 +36,7 @@ const GallerySection = () => {
     },
   ];
   return (
-    <div className="GallerySection | py-5 my-sm-5">
+    <section className="GallerySection | py-5 my-sm-5" id="gallery">
       <div className="container">
         {/* title */}
         <div className="mb-lg-4 mb-3 pb-4 text-center">
@@ -98,7 +98,7 @@ const GallerySection = () => {
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

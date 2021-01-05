@@ -2,7 +2,7 @@ import React from "react";
 
 const HeroSection = () => {
   return (
-    <section className="HeroSection">
+    <section className="HeroSection" id="home">
       {/* caption */}
       <div className="Caption | h-100 w-100 all-center position-absolute">
         <div className="container">

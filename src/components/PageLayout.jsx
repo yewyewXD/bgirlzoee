@@ -17,8 +17,8 @@ const PageLayout = ({ children }) => {
   ];
   return (
     <>
-      <header className="Header | w-100 position-absolute">
-        <nav className="navbar navbar-expand-sm bg-transparent">
+      <header className="Header | w-100">
+        <nav className="navbar navbar-expand-sm bg-transparent navbar-dark">
           <div className="container">
             {/* Logo */}
             <a
@@ -29,7 +29,7 @@ const PageLayout = ({ children }) => {
             >
               bgirlzoee<span className="highlight">.</span>
             </a>
-            {/* <button
+            <button
               className="navbar-toggler d-lg-none"
               type="button"
               data-toggle="collapse"
@@ -39,23 +39,33 @@ const PageLayout = ({ children }) => {
               aria-label="Toggle navigation"
             >
               <span className="navbar-toggler-icon"></span>
-            </button> */}
+            </button>
 
             {/* Menu */}
-            {/* <div className="collapse navbar-collapse " id="collapsibleNavId">
+            <div className="collapse navbar-collapse " id="collapsibleNavId">
               <ul className="navbar-nav mt-2 mt-lg-0 ml-auto">
                 <li className="nav-item text-white active">
-                  <a className="nav-link text-white" href="/">
-                    Home <span className="sr-only">(current)</span>
+                  <a className="nav-link mx-2" href="#home">
+                    Home
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link text-white" href="/">
-                    Link
+                  <a className="nav-link mx-2" href="#posts">
+                    Posts
+                  </a>
+                </li>
+                <li className="nav-item">
+                  <a className="nav-link mx-2" href="#gallery">
+                    Gallery
+                  </a>
+                </li>
+                <li className="nav-item">
+                  <a className="nav-link mx-2" href="#interests">
+                    Interests
                   </a>
                 </li>
               </ul>
-            </div> */}
+            </div>
           </div>
         </nav>
       </header>
