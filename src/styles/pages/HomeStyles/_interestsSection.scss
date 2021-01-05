@@ -16,6 +16,19 @@ circle {
 .InterestCard {
   width: 250px;
   height: 300px;
+
+  @media (max-width: $sm) {
+    height: 250px;
+  }
+}
+
+.InterestText {
+  font-size: 24px;
+  font-weight: 600;
+
+  @media (max-width: $md) {
+    font-size: 22px;
+  }
 }
 
 svg,
@@ -33,4 +46,13 @@ svg,
   border-radius: 50%;
   top: 0;
   left: 0;
+
+  &__Text {
+    font-size: 28px;
+    font-weight: 600;
+
+    @media (max-width: $sm) {
+      font-size: 24px;
+    }
+  }
 }
