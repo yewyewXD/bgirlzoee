@@ -15,7 +15,7 @@ const InterestsSection = () => {
           <div>
             <div className="PercentContainer | position-relative">
               <svg className="position-relative">
-                <circle cx="70" cy="70" r="70"></circle>
+                <circle cx="70" cy="70" r="70" />
                 <circle
                   className="w-100 h-100"
                   style={{
@@ -24,7 +24,7 @@ const InterestsSection = () => {
                   cx="70"
                   cy="70"
                   r="70"
-                ></circle>
+                />
               </svg>
               <div className="Percent | position-absolute all-center w-100 h-100">
                 <h2 className="m-0">
