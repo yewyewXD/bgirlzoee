@@ -7,6 +7,7 @@ const PostsSection = () => {
       caption:
         "One of my favourite freeze even if I struggle all the time to do it 😂↵↵📸 : @lolotte535 ↵↵#breakdance #bgirl #bgirling #breaking #bgirlizm #bboy #bboying #airfreeze #freeze #tricks #autumn #falls #dancer #swissgirl #frenchgirl #brownhairgirl",
       id: "18058285615252140",
+
       media_url:
         "https://scontent.cdninstagram.com/v/t51.29350-15/124096396_640880033260405_1023712826352361679_n.jpg?_nc_cat=110&ccb=2&_nc_sid=8ae9d6&_nc_ohc=XBCpWvMCso8AX_DzoWl&_nc_ht=scontent.cdninstagram.com&oh=4cb1876d3ad714936c6843c414968a7c&oe=601727A8",
       timestamp: "2020-11-10T16:41:35+0000",
@@ -22,6 +23,22 @@ const PostsSection = () => {
       "." +
       longDate.getFullYear();
     return formattedDate;
+  }
+
+  function handleAnimationDelay(postIndex) {
+    switch (postIndex) {
+      case 0:
+        return 0;
+
+      case 1:
+        return 100;
+
+      case 2:
+        return 200;
+
+      default:
+        return 0;
+    }
   }
 
   async function handleGetPosts() {
@@ -55,8 +72,10 @@ const PostsSection = () => {
         {/* content */}
         <div className="row">
           {allPosts.length > 0 &&
-            allPosts.map((post) => (
+            allPosts.map((post, index) => (
               <a
+                data-aos="fade-up"
+                data-aos-delay={handleAnimationDelay(index)}
                 href={post.permalink}
                 target="_blank"
                 rel="noopener noreferrer"
