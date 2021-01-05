@@ -33,7 +33,7 @@ const HeroSection = () => {
           autoPlay
           muted
           preload="auto"
-          poster="https://instagram.fkul14-1.fna.fbcdn.net/v/t51.2885-15/e35/s1080x1080/88131322_242863696739852_8645542826988865499_n.jpg?_nc_ht=instagram.fkul14-1.fna.fbcdn.net&_nc_cat=108&_nc_ohc=oxcWcFDutwkAX_zyVZR&tp=1&oh=acf436f5d136df7708b79439a064b338&oe=5FF3472B"
+          poster="media/video-poster.jpg"
           src="media/compressed-trim.mp4"
           type="video/mp4"
         ></video>
@@ -47,7 +47,7 @@ const HeroSection = () => {
           autoPlay
           muted
           preload="auto"
-          poster="https://instagram.fkul14-1.fna.fbcdn.net/v/t51.2885-15/e35/s1080x1080/88131322_242863696739852_8645542826988865499_n.jpg?_nc_ht=instagram.fkul14-1.fna.fbcdn.net&_nc_cat=108&_nc_ohc=oxcWcFDutwkAX_zyVZR&tp=1&oh=acf436f5d136df7708b79439a064b338&oe=5FF3472B"
+          poster="media/video-poster.jpg"
           src="media/trimmed-origin.mp4"
           type="video/mp4"
         ></video>
