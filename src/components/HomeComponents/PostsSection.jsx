@@ -25,22 +25,6 @@ const PostsSection = () => {
     return formattedDate;
   }
 
-  function handleAnimationDelay(postIndex) {
-    switch (postIndex) {
-      case 0:
-        return 0;
-
-      case 1:
-        return 100;
-
-      case 2:
-        return 200;
-
-      default:
-        return 0;
-    }
-  }
-
   async function handleGetPosts() {
     try {
       const res = await axios.get(
@@ -75,7 +59,7 @@ const PostsSection = () => {
             allPosts.map((post, index) => (
               <a
                 data-aos="fade-up"
-                data-aos-delay={handleAnimationDelay(index)}
+                data-aos-delay={+index * 100}
                 href={post.permalink}
                 target="_blank"
                 rel="noopener noreferrer"

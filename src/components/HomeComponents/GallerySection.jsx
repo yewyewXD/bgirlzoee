@@ -47,6 +47,7 @@ const GallerySection = () => {
         {/* content */}
         <div className="row mx-sm-0 mx-2">
           <a
+            data-aos="fade-up"
             href="https://www.instagram.com/p/CFCCV3jjS2l/?utm_source=ig_web_copy_link"
             target="_blank"
             rel="noopener noreferrer"
@@ -71,8 +72,10 @@ const GallerySection = () => {
             </div>
           </a>
 
-          {galleries.map((gallery) => (
+          {galleries.map((gallery, index) => (
             <a
+              data-aos="fade-up"
+              data-aos-delay={+index * 100}
               key={gallery.image}
               href={gallery.post}
               target="_blank"
