@@ -44,8 +44,8 @@ const PostsSection = () => {
   }, []);
 
   return (
-    <section className="PostsSection | pt-5 my-sm-5" id="posts">
-      <div className="container">
+    <section className="PostsSection | pt-5" id="posts">
+      <div className="container my-sm-5">
         {/* title */}
         <div className="mb-lg-4 mb-3 pb-4 text-center">
           <h2>My Latest Posts</h2>
