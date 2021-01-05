@@ -1,8 +1,19 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Scrollspy from "react-scrollspy";
 
 const PageLayout = ({ children }) => {
   const [navIsOpen, setNavIsOpen] = useState(false);
+  const [navBg, setNavBg] = useState("");
+
+  useEffect(() => {
+    const listener = document.addEventListener("scroll", () => {
+      const navBgClass = window.scrollY < 700 ? "" : "darkBg";
+      setNavBg(navBgClass);
+    });
+    return () => {
+      document.removeEventListener("scroll", listener);
+    };
+  }, [navBg]);
 
   const socialMedias = [
     {
@@ -21,7 +32,7 @@ const PageLayout = ({ children }) => {
 
   const navItems = [
     {
-      link: "#hero",
+      link: "#home",
       text: "Home",
     },
     {
@@ -39,7 +50,7 @@ const PageLayout = ({ children }) => {
   ];
   return (
     <>
-      <header className="Header | w-100">
+      <header className={`Header | w-100 ${navBg}`}>
         <nav className="navbar navbar-expand-md bg-transparent navbar-dark py-1">
           <div className="container">
             {/* Logo */}
@@ -75,6 +86,7 @@ const PageLayout = ({ children }) => {
             >
               <Scrollspy
                 className="navbar-nav mt-2 mt-lg-0 ml-auto"
+                offset={-30}
                 items={["home", "posts", "gallery", "interests"]}
                 currentClassName="active"
               >
