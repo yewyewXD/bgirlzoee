@@ -10,6 +10,7 @@ A portfolio kind of website for my girlfriend, who is a passionate breakdancer.
 
 Started on: 21 Nov 2020 <br>
 Completed on: 5 Jan 2021 <br>
+Last modified: 19 Jan 2021 <br>
 
 ## Screenshots
 

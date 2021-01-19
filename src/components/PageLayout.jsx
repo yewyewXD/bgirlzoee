@@ -28,6 +28,10 @@ const PageLayout = ({ children }) => {
       link: "https://www.facebook.com/zoee.hablot.7/",
       text: "FACEBOOK",
     },
+    {
+      link: "mailto:zoee.hab.ipad@gmail.com",
+      text: "EMAIL",
+    },
   ];
 
   const navItems = [
